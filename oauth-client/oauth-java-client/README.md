@@ -92,7 +92,7 @@ Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
 *Oauth2EndpointApi* | [**authorizeUsingPOST**](docs/Oauth2EndpointApi.md#authorizeUsingPOST) | **POST** /oauth2/authorize | OAuth2授权点
 *Oauth2EndpointApi* | [**introspectTokenUsingPOST**](docs/Oauth2EndpointApi.md#introspectTokenUsingPOST) | **POST** /oauth2/introspect | OAuth2令牌检查点
-*Oauth2EndpointApi* | [**issueTokenUsingPOST1**](docs/Oauth2EndpointApi.md#issueTokenUsingPOST1) | **POST** /oauth2/token | OAuth2令牌颁发点
+*Oauth2EndpointApi* | [**issueTokenUsingPOST1**](docs/Oauth2EndpointApi.md#issueTokenUsingPOST) | **POST** /oauth2/token | OAuth2令牌颁发点
 *Oauth2EndpointApi* | [**revokeTokenUsingPOST**](docs/Oauth2EndpointApi.md#revokeTokenUsingPOST) | **POST** /oauth2/revoke | OAuth2令牌吊销点
 
 

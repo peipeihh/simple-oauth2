@@ -11,5 +11,12 @@
 
     <artifactId>oauth-spring-boot-websupport</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.pphh.demo</groupId>
+            <artifactId>oauth-spring-boot-autoconfigure</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
 
 </project>

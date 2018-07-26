@@ -13,14 +13,14 @@ import org.springframework.context.annotation.Bean;
  */
 public class ClientAutoConfiguration {
 
-    @Value("${oauth.api.url:http://localhost:8090}")
-    private String oauthApiUrl;
+    @Value("${oauth.server.url:http://localhost:8090}")
+    private String authServerUrl;
 
     @Bean
-    @ConditionalOnProperty(name = "oauth.api.url")
+    @ConditionalOnProperty(name = "oauth.server.url")
     public OAuth2EndpointApi oAuth2EndpointApi() {
         OAuth2EndpointApi oAuth2EndpointApi = new OAuth2EndpointApi();
-        oAuth2EndpointApi.getApiClient().setBasePath(oauthApiUrl);
+        oAuth2EndpointApi.getApiClient().setBasePath(authServerUrl);
         return oAuth2EndpointApi;
     }
 

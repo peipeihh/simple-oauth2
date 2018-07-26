@@ -304,7 +304,7 @@ public class OAuth2EndpointApi {
         return call;
     }
     /**
-     * Build call for issueTokenUsingPOST1
+     * Build call for issueTokenUsingPOST
      * @param grantType grant_type (required)
      * @param authorization Authorization (optional)
      * @param code code (optional)
@@ -377,7 +377,7 @@ public class OAuth2EndpointApi {
         
         // verify the required parameter 'grantType' is set
         if (grantType == null) {
-            throw new ApiException("Missing the required parameter 'grantType' when calling issueTokenUsingPOST1(Async)");
+            throw new ApiException("Missing the required parameter 'grantType' when calling issueTokenUsingPOST(Async)");
         }
         
 
@@ -399,7 +399,7 @@ public class OAuth2EndpointApi {
      * @return OAuth2AccessToken
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
-    public OAuth2AccessToken issueTokenUsingPOST1(String grantType, String authorization, String code, String redirectUri, String refreshToken, String username, String password) throws ApiException {
+    public OAuth2AccessToken issueTokenUsingPOST(String grantType, String authorization, String code, String redirectUri, String refreshToken, String username, String password) throws ApiException {
         ApiResponse<OAuth2AccessToken> resp = issueTokenUsingPOST1WithHttpInfo(grantType, authorization, code, redirectUri, refreshToken, username, password);
         return resp.getData();
     }

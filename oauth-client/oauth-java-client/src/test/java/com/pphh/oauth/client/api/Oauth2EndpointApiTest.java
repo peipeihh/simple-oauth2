@@ -79,7 +79,7 @@ public class Oauth2EndpointApiTest {
         String refreshToken = null;
         String username = null;
         String password = null;
-        OAuth2AccessToken response = api.issueTokenUsingPOST1(grantType, authorization, code, redirectUri, refreshToken, username, password);
+        OAuth2AccessToken response = api.issueTokenUsingPOST(grantType, authorization, code, redirectUri, refreshToken, username, password);
 
         // TODO: test validations
     }
