@@ -1,0 +1,14 @@
+{
+  "name": "demo-front-jquery",
+  "version": "1.0.0",
+  "description": "this is a simple web front project with jquery, interact with oauth 2.0 - implicit grant mode.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "pphh",
+  "license": "Apache License 2.0",
+  "dependencies": {
+    "express": "^4.15.3"
+  }
+}
