@@ -69,6 +69,6 @@ public class MetricServiceImpl implements MetricService {
     }
 
     public void counter(String key) {
-        log.info("TBD：使用时间序列数据库（openTSDB）记录事件发生 - " + key);
+        log.info("TBD: please use time-based data base (such as openTSDB) to record event, event name=" + key);
     }
 }

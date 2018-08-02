@@ -25,9 +25,9 @@ import java.net.URLEncoder;
  */
 @RestController
 @RequestMapping("/api/oauth2")
-public class oAuthClientController {
+public class OAuthClientController {
 
-    final Logger log = LoggerFactory.getLogger(oAuthClientController.class);
+    final Logger log = LoggerFactory.getLogger(OAuthClientController.class);
 
     @Value("${oauth.server.url:}")
     private String authServerUrl;
@@ -35,7 +35,7 @@ public class oAuthClientController {
     @Value("${oauth.client.callback:}")
     private String defaultClientCallbackUrl;
 
-    @Value("${oauth.client.Id:}")
+    @Value("${oauth.client.id:}")
     private String clientId;
 
     @Value("${oauth.client.authorization:}")
