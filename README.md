@@ -6,8 +6,10 @@
 准备好JDK7和Maven3即可。
 
 ## 一分钟快速入门 Getting Started
+TBD
 
 ## 演示使用
+TBD
 
 ## 联系 Contact
 我们的邮箱地址：peipeihh@qq.com，欢迎来信联系。
