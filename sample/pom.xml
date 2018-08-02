@@ -2,14 +2,88 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <parent>
-        <artifactId>simple-oauth2</artifactId>
-        <groupId>com.pphh.demo</groupId>
-        <version>1.0-SNAPSHOT</version>
-    </parent>
     <modelVersion>4.0.0</modelVersion>
 
+    <groupId>com.pphh.demo</groupId>
     <artifactId>oauth-sample</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
 
+    <modules>
+        <module>demo-front-vue</module>
+        <module>demo-java-client</module>
+        <module>demo-spring-boot-web</module>
+        <module>demo-front-vue-spring-boot-web</module>
+    </modules>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <java.version>1.8</java.version>
+        <springboot.version>1.5.8.RELEASE</springboot.version>
+        <lombok.version>1.16.20</lombok.version>
+        <swagger.version>2.7.0</swagger.version>
+        <auth0.java.jwt.version>3.1.0</auth0.java.jwt.version>
+        <auth.version>1.0-SNAPSHOT</auth.version>
+        <auth.client.version>1.0.0</auth.client.version>
+    </properties>
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>1.5.8.RELEASE</version>
+    </parent>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>Edgware.SR2</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>com.pphh.demo</groupId>
+                <artifactId>oauth-core</artifactId>
+                <version>${auth.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.pphh.demo</groupId>
+                <artifactId>oauth-java-client</artifactId>
+                <version>${auth.client.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.pphh.demo</groupId>
+                <artifactId>oauth-spring-web-filter</artifactId>
+                <version>${auth.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.pphh.demo</groupId>
+                <artifactId>oauth-spring-boot-autoconfigure</artifactId>
+                <version>${auth.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.pphh.demo</groupId>
+                <artifactId>oauth-spring-boot-websupport</artifactId>
+                <version>${auth.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>2.3.2</version>
+                <configuration>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
+                    <encoding>${project.build.sourceEncoding}</encoding>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>
