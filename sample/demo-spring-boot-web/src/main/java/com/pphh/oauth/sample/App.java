@@ -105,7 +105,7 @@ public class App {
 
         if (accessToken != null) {
             // set the cookie with the token
-            CookieUtil.setCookie(response, this.tokenName, accessToken.getValue(), AppProperties.cookieDomain,
+            CookieUtil.setCookie(response, this.tokenName, accessToken.getAccessToken(), AppProperties.cookieDomain,
                     AppProperties.cookiePath, AppProperties.cookieSecure, AppProperties.cookieExpiry);
             msg = "已成功登录，授权信息已存储到浏览器cookie中。";
             status = HttpStatus.OK;

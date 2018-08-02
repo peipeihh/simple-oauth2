@@ -582,7 +582,7 @@ public class UserServiceImpl implements UserService {
         if (!hasUser(userName)) {
             user = new UserEntity();
             user.setName(userName);
-            user.setEmail(userName + "@ppdaicorp.com");
+            user.setEmail(userName + "@pphh.com");
             user.setLastVisitAt(new Date());
             userRepo.save(user);
         }
