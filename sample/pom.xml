@@ -10,7 +10,6 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>demo-front-vue</module>
         <module>demo-java-client</module>
         <module>demo-spring-boot-web</module>
         <module>demo-front-vue-spring-boot-web</module>
