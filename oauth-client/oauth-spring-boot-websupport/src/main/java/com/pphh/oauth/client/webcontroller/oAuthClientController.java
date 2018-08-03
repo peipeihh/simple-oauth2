@@ -18,7 +18,7 @@ import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
 
 /**
- * Please add description here.
+ * spring boot web客户端所需的后端接口，包括获取token、刷新token、吊销token等操作
  *
  * @author huangyinhuang
  * @date 7/26/2018
@@ -51,7 +51,7 @@ public class OAuthClientController {
             try {
                 callback = URLEncoder.encode(callback, "utf-8");
             } catch (UnsupportedEncodingException e) {
-                log.info(e.getMessage(), e);
+                log.error(e.getMessage(), e);
             }
             String redirectUrl = String.format(
                     "%s/#/authorize?response_type=code&client_id=%s&redirect_uri=%s&scope=user_role&state=1",
