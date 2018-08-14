@@ -177,3 +177,6 @@ CREATE TABLE IF NOT EXISTS `simple_oauth`.`client_scope` (
 
 # default admin account
 INSERT INTO `simple_oauth`.`user` (`id`, `email`, `name`, `checkcode`, `password`, `roles`) VALUES ('1', 'admin@pphh.com', 'admin', 'ZO]7>u#-', '1358A6F6454439C4AD2DA61C24808610', 'admin,local');
+
+# demo client
+INSERT INTO `simple_oauth`.`client` (`description`, `client_id`, `client_secret`, `basic_auth`, `redirect_url`, `owner_id`) VALUES ('demo app', 'demo', '50dN92', 'Basic ZGVtbzo1MGROOTI=', '.*', '1');

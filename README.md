@@ -125,6 +125,8 @@ TBD
 
 ## 7. 演示使用
 
+在演示之前，请启动OAuth应用前后端web服务。
+
 演示项目结构如下，
 
 | 样例项目 | 前端框架 | 后端框架 | OAuth2.0授权方式 | 前端服务端口 | 后端服务端口 |
@@ -133,9 +135,9 @@ TBD
 | demo-front-vue | 前端vue框架 + express服务器 | 无 | Authorization Code Grant | 8400 | 无 |
 | demo-spring-boot-web | 无 | 后端spring框架 + 后端静态登录页面 | Resource Owner Credential Grant | 无 | 8100 |
 | demo-front-vue-spring-boot-web| 前端vue框架 + express服务器|后端spring框架 |Authorization Code Grant | 8888 | 8080 |
-| demo-web-service  | 无 | 后端spring框架 + 后端静态页面 | Client Credential Grant | 无 | 8200/8300 | 
+| demo-web-service  | 无 | 后端spring框架 + 后端静态页面 | Client Credential Grant | 无 | 8200/8300 |
 
-请进入各个演示项目，阅读各项目里的README文件进行下一步的演示。
+更详细的演示说明，请进入各个演示项目，阅读各项目里的README文件进行下一步的演示。
 
 ## 8. 注意事项
 
