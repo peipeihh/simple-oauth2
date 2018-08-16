@@ -32,7 +32,7 @@ npm set registry "https://registry.npm.taobao.org/"
 
 下载依赖包：npm install，执行成功后将会把express依赖包下载到/node_modules目录。
 
-运行命令：node app.js，运行成功后可以通过[http://localhost:8600](http://localhost:8600)访问应用
+运行命令：node app.js，运行成功后可以通过[http://localhost:9001](http://localhost:9001)访问应用
 
 注：应用的启动端口在./app.js文件中进行配置。
 
@@ -51,7 +51,7 @@ npm set registry "https://registry.npm.taobao.org/"
 
 2. 启动当前演示项目
    - 执行前端应用运行命令：node app.js
-   - 打开浏览器，访问前端应用地址：http://localhost:8600
+   - 打开浏览器，访问前端应用地址：http://localhost:9001
    - 点击登录按钮，将跳转到simple oauth的授权界面：http://localhost/#/authorize，点击同意按钮。
      * 注：若simple oauth没有登录，则需要先登录，再点击同意授权按钮，登录账号缺省为admin/admin，详情请查看simple auth项目readme文件。
    - 若一切正常，simple oauth将跳转回当前前端演示应用地址，并完成登录，显示登录账号。

@@ -61,7 +61,7 @@
 
     $("#btn_login").click(function () {
         // 跳转到simple oauth授权页面
-        let callback_url = "http%3A%2F%2Flocalhost%3A8600%2Fcallback.html";
+        let callback_url = "http%3A%2F%2Flocalhost%3A9001%2Fcallback.html";
         let auth_server_url = "http://localhost/#/authorize?response_type=token&scope=read&client_id=demo&redirect_uri=" + callback_url;
         window.location.replace(auth_server_url);
 

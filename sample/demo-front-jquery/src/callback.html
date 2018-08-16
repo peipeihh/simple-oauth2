@@ -8,7 +8,7 @@
 
 <h2>登录回调页面</h2>
 <p id="prompt_msg">登录中......</p>
-<button id="btn_home" style="display: none"><a href="http://localhost:8600/">回到首页</a></button>
+<button id="btn_home" style="display: none"><a href="http://localhost:9001/">回到首页</a></button>
 
 
 </body>
@@ -28,7 +28,7 @@
     if(access_token != null){
         $.cookie("access_token", access_token, {path: '/'});
         $("#prompt_msg").text("登录成功，马上回到首页。");
-        window.location.replace("http://localhost:8600/");
+        window.location.replace("http://localhost:9001/");
     } else {
         $("#prompt_msg").text("登录失败，请回到首页，重新尝试登录。");
         $("#btn_home").css("display", "block");

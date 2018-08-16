@@ -6,6 +6,6 @@ app.use(express.static('src', {'index': 'index.html'}));
 //     res.send('Hello World!');
 // });
 
-app.listen(8600);
+app.listen(9001);
 console.log("server is started, please open following url in the browser: ");
-console.log("http://localhost:8600");
+console.log("http://localhost:9001");
