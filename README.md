@@ -150,7 +150,18 @@ Caused by: java.lang.ClassNotFoundException: javax.xml.bind.JAXBException
         at java.base/java.lang.ClassLoader.loadClass(Unknown Source) ~[na:na]
         ... 34 common frames omitted
 ```
-为了避免该问题，请先使用Java 8运行当前项目。
+
+为了这是由于Java 9中引入了模块化功能，javax.xml.bind不再是java核心运行类库，详细请查看这个[文章](https://www.baeldung.com/java-9-jaxbexception)。
+
+为了解决这个问题，可以在pom.xml文件中添加如下依赖，
+
+```
+<dependency>
+   <groupId>javax.xml.bind</groupId>
+   <artifactId>jaxb-api</artifactId>
+   <version>2.3.0</version>
+</dependency>
+```
 
 ## 9. 联系 Contact
 我们的邮箱地址：peipeihh@qq.com，欢迎来信联系。

@@ -75,6 +75,12 @@
             <artifactId>mail</artifactId>
             <version>1.4.7</version>
         </dependency>
+        <!-- fix of javax.xml.bind.JAXBException in java 9, please view https://www.baeldung.com/java-9-jaxbexception for more details-->
+        <dependency>
+            <groupId>javax.xml.bind</groupId>
+            <artifactId>jaxb-api</artifactId>
+            <version>2.3.0</version>
+        </dependency>
     </dependencies>
 
     <build>
