@@ -58,11 +58,15 @@ npm set registry "https://registry.npm.taobao.org/"
 
 2. 注册应用
    - 请登录oauth前端页面，应该能看到auth server已经注册一个缺省的demo应用。
-     * 应用查看地址：(http://localhost/#/dev/myclient)[http://localhost/#/dev/myclient]
+     * 应用查看列表：[http://localhost/#/dev/myclient](http://localhost/#/dev/myclient)
 
    - 若没有发现demo应用，可以手动注册应用，
      * client id = demo
      * 重定向返回地址 = .* （其含义为simple oauth接受demo client指定的任何返回地址）
+     * 注册成功后，更新./webpack.config.js中下面的配置，
+     ```
+     'authorization': 'Basic ZGVtbzo1MGROOTI=',
+     ```
 
 3. 启动当前演示项目
    - 执行前端应用运行命令：npm run dev
