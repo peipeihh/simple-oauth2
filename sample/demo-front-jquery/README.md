@@ -1,9 +1,9 @@
 
-## 简介
+## 1. 简介
 
 这是一个演示项目，使用纯前端技术栈（html+jquery+css），对接Simple-OAuth所提供的oauth 2.0 implicit grant授权方式，实现用户登录功能。
 
-## 项目的结构和构建
+## 2. 项目的结构和构建
 
 ```
 - README.md 使用说明文档
@@ -14,7 +14,7 @@
   - callback.html 登录后回调页面
 ```
 
-#### 安装node并配置npm源
+#### 2.1 安装node并配置npm源
 
 登录node官方网站安装node 3.10.8+。
 
@@ -26,7 +26,7 @@ npm set registry "https://registry.npm.taobao.org/"
 
 配置后可以通过npm config list查看。
 
-#### 前端项目构建运行命令
+#### 2.2 前端项目构建运行命令
 
 构建文件：./package.json
 
@@ -36,7 +36,7 @@ npm set registry "https://registry.npm.taobao.org/"
 
 注：应用的启动端口在./app.js文件中进行配置。
 
-## 演示步骤
+## 3. 演示
 
 1. 准备工作
    - 根据oauth-server项目的README文档，启动simple oauth后端web服务。
