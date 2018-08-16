@@ -64,7 +64,7 @@ module.exports = (options = {}) => ({
     devtool: options.dev ? '#eval-source-map' : '#source-map',
     devServer: {
         host: 'localhost',
-        port: 8400,
+        port: 9002,
         contentBase: [path.join(__dirname, debugPath)],
         proxy: {},
         historyApiFallback: {
@@ -74,7 +74,7 @@ module.exports = (options = {}) => ({
         setup(app){
             app.get('/api/oauth2/redirectUrl', function (req, res) {
                 let authServerUrl = "http://localhost/#/authorize?";
-                let callback = "http%3a%2f%2flocalhost%3a8400%2f%23%2flogin";
+                let callback = "http%3a%2f%2flocalhost%3a9002%2f%23%2flogin";
                 let query = "response_type=code&client_id=demo&redirect_uri=" + callback + "&scope=user_role&state=1";
                 res.send({
                     code: 0,
@@ -105,7 +105,7 @@ module.exports = (options = {}) => ({
                         form: {
                             "grant_type": "AUTHORIZATION_CODE",
                             "code": authCode,
-                            'redirect_uri': 'http://localhost:8400/#/login'
+                            'redirect_uri': 'http://localhost:9002/#/login'
                         }
                     };
 
@@ -154,7 +154,7 @@ module.exports = (options = {}) => ({
                         form: {
                             'grant_type': 'REFRESH_TOKEN',
                             'refresh_token': refresh_token,
-                            'redirect_uri': 'http://localhost:8400/#/login'
+                            'redirect_uri': 'http://localhost:9002/#/login'
                         }
                     };
 
