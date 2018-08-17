@@ -16,6 +16,7 @@ package com.pphh.oauth.service.impl;
 
 import com.pphh.oauth.service.MailService;
 import com.pphh.oauth.utils.EnvProperty;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -32,6 +33,7 @@ import java.util.Properties;
  * @date 7/5/2018
  */
 @Service
+@Slf4j
 public class SmtpMailServiceImpl implements MailService {
 
     @Autowired
@@ -56,8 +58,16 @@ public class SmtpMailServiceImpl implements MailService {
             Transport.send(message);
             bSuccess = true;
         } catch (Exception ex) {
-            ex.printStackTrace();
             bSuccess = false;
+        }
+
+        /**
+         * TODO: print out the content in the console, please remove this code once the mail service is ready.
+         */
+        if (!bSuccess) {
+            log.info("print out the mail info in the console directly as the mail service is not ready.");
+            log.info(content);
+            bSuccess = Boolean.TRUE;
         }
 
         return bSuccess;

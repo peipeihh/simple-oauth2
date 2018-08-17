@@ -17,10 +17,10 @@
                     <div class="login-btn">
                         <el-button type="primary" @click="submitForm('loginForm')">登录</el-button>
                     </div>
-                    <!--<div class="login-tips">
+                    <div class="login-tips">
                         <p class="tips-left" @click="switchFormTo('REGISTER_ACCOUNT')">注册新用户</p>
                         <p class="tips-right" @click="switchFormTo('FETCH_ACCOUNT')">找回我的密码</p>
-                    </div>-->
+                    </div>
                 </el-form>
 
                 <el-form v-if=" formChoice === 'REGISTER_ACCOUNT' " :model="registerAccountForm" :rules="rules"
