@@ -63,11 +63,11 @@ module.exports = (options = {}) => ({
     },
     devtool: options.dev ? '#eval-source-map' : '#source-map',
     devServer: {
-        port: 8888,
+        port: 9006,
         contentBase: [path.join(__dirname, debugPath)],
         proxy: {
             '/api/': {
-                target: 'http://127.0.0.1:8080/api',
+                target: 'http://127.0.0.1:9007/api',
                 changeOrigin: true,
                 pathRewrite: {
                     '^/api': ''
