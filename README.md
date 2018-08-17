@@ -131,11 +131,11 @@ TBD
 
 | 样例项目 | 前端框架 | 后端框架 | OAuth2.0授权方式 | 前端服务端口 | 后端服务端口 |
 | --- | --- | --- | --- | --- | --- |
-| demo-front-jquery | 纯前端 | 无 | Implicit Grant | 8600 | 无 |
-| demo-front-vue | 前端vue框架 + express服务器 | 无 | Authorization Code Grant | 8400 | 无 |
-| demo-spring-boot-web | 无 | 后端spring框架 + 后端静态登录页面 | Resource Owner Credential Grant | 无 | 8100 |
-| demo-front-vue-spring-boot-web| 前端vue框架 + express服务器|后端spring框架 |Authorization Code Grant | 8888 | 8080 |
-| demo-web-service  | 无 | 后端spring框架 + 后端静态页面 | Client Credential Grant | 无 | 8200/8300 |
+| demo-front-jquery | 纯前端 | 无 | Implicit Grant | 9001 | 无 |
+| demo-front-vue | 前端vue框架 + express服务器 | 无 | Authorization Code Grant | 9002 | 无 |
+| demo-web-service  | 无 | 后端spring框架 + 后端静态页面 | Client Credential Grant | 无 | 9003/9004 |
+| demo-spring-boot-web | 无 | 后端spring框架 + 后端静态登录页面 | Resource Owner Credential Grant | 无 | 9005 |
+| demo-front-vue-spring-boot-web| 前端vue框架 + express服务器|后端spring框架 |Authorization Code Grant | 9006 | 9007 |
 
 更详细的演示说明，请进入各个演示项目，阅读各项目里的README文件进行下一步的演示。
 
