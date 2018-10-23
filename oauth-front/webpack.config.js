@@ -36,8 +36,7 @@ module.exports = (options = {}) => ({
                     presets: ['es2015']
                 }
             }],
-            exclude: /node_modules/,
-            include: path.resolve(__dirname, "./node_modules/vue-particles/src/"),
+            include: [path.resolve(__dirname, "./src/"), path.resolve(__dirname, "./node_modules/vue-particles/")]
         }, {
             test: /\.css$/,
             use: ['style-loader', 'css-loader', 'postcss-loader']
